@@ -30,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@id/titulo">
 
         <LinearLayout
+            android:id="@+id/linearJog1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -59,6 +60,7 @@
 
 
         <LinearLayout
+            android:id="@+id/linearJog2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -99,25 +101,16 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_00"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"
+                android:id="@+id/bt_00"/>
 
             <Button
                 android:id="@+id/bt_01"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/bt_02"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"/>
 
         </TableRow>
 
@@ -127,26 +120,15 @@
 
             <Button
                 android:id="@+id/bt_10"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
-
-            </Button>
+                style="@style/Button"/>
 
             <Button
                 android:id="@+id/bt_11"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"></Button>
 
             <Button
                 android:id="@+id/bt_12"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"></Button>
 
         </TableRow>
 
@@ -156,24 +138,15 @@
 
             <Button
                 android:id="@+id/bt_20"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"/>
 
             <Button
                 android:id="@+id/bt_21"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"/>
 
             <Button
                 android:id="@+id/bt_22"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"></Button>
+                style="@style/Button"/>
 
         </TableRow>
 

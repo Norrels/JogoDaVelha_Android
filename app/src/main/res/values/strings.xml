@@ -3,5 +3,7 @@
     <string name="action_settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="venceu">Parabéns você venceu</string>
+    <string name="velha">EEEErrr parece que deu velha :D</string>
 
 </resources>

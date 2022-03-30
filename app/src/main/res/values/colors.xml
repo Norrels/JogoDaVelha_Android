@@ -7,5 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="toolBar">#77458C</color>
+    <color name="roxo">#77458C</color>
+    <color name="roxo_escuro">#751F98</color>
 </resources>

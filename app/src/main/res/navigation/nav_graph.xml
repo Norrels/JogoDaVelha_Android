@@ -18,8 +18,8 @@
     <fragment
         android:id="@+id/jogoFragment"
         android:name="br.senais.sp.cotia.jogodavelha.fragment.JogoFragment"
-        android:label="fragment_jogo"
-        tools:layout="@layout/fragment_jogo" >
+        android:label="Jogo"
+        tools:layout="@layout/fragment_jogo">
         <action
             android:id="@+id/action_jogoFragment_to_prefFragment"
             app:destination="@id/prefFragment" />
