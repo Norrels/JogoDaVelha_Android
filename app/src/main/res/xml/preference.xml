@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.EditTextPreference
+        android:icon="@android:drawable/ic_menu_manage"
+        android:key="simb_jog_1"
+        android:summary="@string/summary_jog1"
+        android:title="@string/simbolo_jog1" />
+    <androidx.preference.EditTextPreference
+        android:icon="@android:drawable/ic_menu_manage"
+        android:key="simb_jog_2"
+        android:summary="@string/summary_jog2"
+        android:title="@string/simbolo_jog2" />
+    <androidx.preference.EditTextPreference
+        android:icon="@android:drawable/ic_menu_manage"
+        android:key="nome_jog1"
+        android:summary="@string/summary_jog1name"
+        android:title="@string/nome_jog1" />
+    <androidx.preference.EditTextPreference
+        android:icon="@android:drawable/ic_menu_manage"
+        android:key="nome_jog2"
+        android:summary="@string/summary_jog2name"
+        android:title="@string/nome_jog2" />
+
+</androidx.preference.PreferenceScreen>

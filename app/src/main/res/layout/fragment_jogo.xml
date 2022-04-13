@@ -23,37 +23,39 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
         android:paddingLeft="30dp"
         android:paddingTop="20dp"
         android:paddingRight="30dp"
-
         app:layout_constraintTop_toBottomOf="@id/titulo">
 
         <LinearLayout
             android:id="@+id/linearJog1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
             android:layout_weight="2"
             android:background="@drawable/shape_placar"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingTop="30dp"
-            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
             android:paddingBottom="30dp">
 
             <TextView
+                android:id="@+id/placarJog1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/tv_jog1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/righteous"
-                android:text="Jogador 1"
+                android:text="@string/jog1"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -67,22 +69,24 @@
             android:background="@drawable/shape_placar"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingTop="30dp"
+            android:paddingTop="10dp"
             android:paddingBottom="30dp">
 
             <TextView
+                android:id="@+id/placarJog2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/tv_jog2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/righteous"
-                android:text="Jogador 2"
+                android:text="@string/jog2"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -93,6 +97,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
         android:padding="20dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -101,8 +106,8 @@
             android:layout_height="match_parent">
 
             <Button
-                style="@style/Button"
-                android:id="@+id/bt_00"/>
+                android:id="@+id/bt_00"
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/bt_01"
@@ -110,7 +115,7 @@
 
             <Button
                 android:id="@+id/bt_02"
-                style="@style/Button"/>
+                style="@style/Button" />
 
         </TableRow>
 
@@ -120,7 +125,7 @@
 
             <Button
                 android:id="@+id/bt_10"
-                style="@style/Button"/>
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/bt_11"
@@ -138,17 +143,21 @@
 
             <Button
                 android:id="@+id/bt_20"
-                style="@style/Button"/>
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/bt_21"
-                style="@style/Button"/>
+                style="@style/Button" />
 
             <Button
                 android:id="@+id/bt_22"
-                style="@style/Button"/>
+                style="@style/Button" />
 
         </TableRow>
+
+        <TextView
+            android:id="@+id/totalvelhas"
+            android:text="Total de velhas " />
 
 
     </TableLayout>

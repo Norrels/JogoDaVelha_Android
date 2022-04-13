@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2078125" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/drawable-v24/shape_placar2.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2078125" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/drawable/shape_placar.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/drawable/shape_placar_roxo.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/activity_main.xml" value="0.2898550724637681" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/content_main.xml" value="0.2898550724637681" />
-        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/fragment_inicio.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/fragment_inicio.xml" value="0.2" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/fragment_jogo.xml" value="0.22" />
         <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/layout/fragment_pref.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/menu/menu_main.xml" value="0.1953125" />
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/xml/prefence.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/TecDevNoite/AndroidStudioProjects/JogodaVelha/app/src/main/res/xml/preference.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -5,5 +5,23 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="venceu">Parabéns você venceu</string>
     <string name="velha">EEEErrr parece que deu velha :D</string>
+    <string name="revanche">Revanche</string>
+    <string name="inicio">Volta à tela inicio</string>
+    <string name="proferencias">Preferencias</string>
+    <string name="simbolo_jog1">Simbolo do jogador 1</string>
+    <string name="simbolo_jog2">Simbolo do jogador 2</string>
+    <string name="summary_jog1">Escolha o simbolo do jogador 1</string>
+    <string name="summary_jog2">Escolha o simbolo do jogador 2</string>
+    <string name="jog1">%1$s 1 %2$s</string>
+    <string name="jog2">%1$s 2 %2$s</string>
+    <string name="nome_jog1">Nome do jogador 1</string>
+    <string name="nome_jog2">Nome do jogador 2</string>
+    <string name="summary_jog1name">Escolha o nome do jogador 1</string>
+    <string name="summary_jog2name">Escolha o nome do jogador 2</string>
+    <string name="dialog_resetar">Deseja realmente resetar?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="total_velhas">Total de velhas: %1$d</string>
+
 
 </resources>

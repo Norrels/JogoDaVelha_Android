@@ -2,65 +2,57 @@ package br.senais.sp.cotia.jogodavelha.fragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import br.senais.sp.cotia.jogodavelha.R;
+import br.senais.sp.cotia.jogodavelha.databinding.FragmentInicioBinding;
+import br.senais.sp.cotia.jogodavelha.util.PrefUtil;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InicioFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class InicioFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public InicioFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment InicioFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static InicioFragment newInstance(String param1, String param2) {
-        InicioFragment fragment = new InicioFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+  private String nomejog1, nomejog2;
+  private FragmentInicioBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio, container, false);
+
+        binding = FragmentInicioBinding.inflate(inflater, container,  false);
+
+        binding.btJogar.setOnClickListener(v ->{
+            nomejog1 = binding.etNomejog1.getText().toString();
+            nomejog2 = binding.etNomejog2.getText().toString();
+
+            if (!nomejog1.equals("")){
+                PrefUtil.setNomeJog1(nomejog1, getContext());
+            } else {
+                PrefUtil.setNomeJog1("Jogador", getContext());
+            }
+           if (!nomejog2.equals("")){
+               PrefUtil.setNomeJog2(nomejog2, getContext());
+           } else {
+               PrefUtil.setNomeJog2("Jogador", getContext());
+           }
+
+
+            NavHostFragment.findNavController(InicioFragment.this).navigate(R.id.action_inicioFragment_to_jogoFragment);
+        });
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        //pega a referência para a activity
+        AppCompatActivity minhaActivity = (AppCompatActivity) getActivity();
+        minhaActivity.getSupportActionBar().hide();
     }
 }
+
